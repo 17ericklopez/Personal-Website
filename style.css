@@ -186,7 +186,6 @@ img.profile-img {
     flex-direction: row;  /* Keep navigation items horizontal */
     align-items: center;     /* Center the items */
     justify-content: space-between;
-    align-items: center;
     padding: 0 15px;
   }
 
@@ -195,7 +194,7 @@ img.profile-img {
   }
 
   nav ul li a {
-    font-size: 16px; /* Reduce link font size for mobile */
+    font-size: 40px; /* Reduce link font size for mobile */
   }
 
   /* Main Content Adjustments */
@@ -252,13 +251,13 @@ img.profile-img {
 
   /* Adjust Two Images Side by Side for Smaller Screens */
   .two-img {
-    max-width: 100%;  /* Ensure images take full width on smaller screens */
+    max-width: 50%;  /* Ensure images take full width on smaller screens */
     margin: 10px 0;   /* Adjust margin */
   }
 
   /* Contact - Adjust bullet points position */
   ul {
-    padding-left: 20px; /* Add some padding to the left of the list */
+    padding-left: 0; /* Add some padding to the left of the list */
     margin-left: 0; /* Remove any extra margin */
   }
 
