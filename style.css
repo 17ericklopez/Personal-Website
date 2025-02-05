@@ -187,6 +187,7 @@ img.profile-img {
     align-items: center;     /* Center the items */
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
   }
 
   nav ul li {
@@ -254,6 +255,17 @@ img.profile-img {
     max-width: 100%;  /* Ensure images take full width on smaller screens */
     margin: 10px 0;   /* Adjust margin */
   }
+
+  /* Contact - Adjust bullet points position */
+  ul {
+    padding-left: 20px; /* Add some padding to the left of the list */
+    margin-left: 0; /* Remove any extra margin */
+  }
+
+  ul li {
+    margin-left: 0; /* Ensure no extra margin is applied */ 
+  }
+
 
   /* Footer Adjustments */
   footer p {
