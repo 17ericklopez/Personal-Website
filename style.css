@@ -1,0 +1,248 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Individual Navigation items */
+nav ul li {
+  margin: 0 20px;
+}
+
+/* Navigation Links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Hover Effects for links */
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #529ad0; /* Gold hover effect */
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+main p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 20px 0;      /* Space between paragraphs */
+  line-height: 1.8;
+  text-align: justify; /* Justify text for better readability */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section Titles */
+h1, h2 {
+  color: #333;
+  margin-left: 50px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+/* Images (Global) */
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+/* Profile Image (Circle Style)*/
+img.profile-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+/* Images (for projects) */
+.down-img {
+  max-width: 100%;
+  margin: 20px 0;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Scaled down vertical images */
+.ver-img {
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Scaled Down images for Hobbies */
+.low-img {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right:auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Two Images Side by Side */
+.two-img {
+  max-width: 30%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Grid Layout for Projects */
+#projects {
+  margin: 20px 0;
+  display: block;
+}
+
+#projects ul {
+  margin-left: 100px;
+}
+
+/* Youtube Link position */
+.youtube-link {
+  position: relative;
+  top: -10px;
+  left: 80px;
+
+}
+
+.social-container {
+  position: relative;
+  left: 100px;
+}
+/* Links on contact hmtl */
+.social-link {
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  #projects {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+  
+  /* Footer adjustments on mobile */
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Navbar adjustments */
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Profile Image adjustments for mobile */
+  img.profile-img {
+    margin-bottom: 10px;
+  }
+
+  /* Adjust Paragraphs and Headers on Mobile */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+form label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #FFD700;
+}
