@@ -181,68 +181,94 @@ img.profile-img {
 }
 
 @media (max-width: 768px) {
-  #projects {
-    grid-template-columns: 1fr; /* Stack on smaller screens */
-  }
-  
-  /* Footer adjustments on mobile */
-  footer p {
-    font-size: 0.9rem;
-  }
-  
-  /* Navbar adjustments */
+  /* Header and Navigation */
   nav ul {
-    flex-direction: column;
+    flex-direction: column;  /* Stack navigation items */
+    align-items: center;     /* Center the items */
   }
 
   nav ul li {
+    margin: 10px 0;  /* Adjust spacing for smaller screens */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Reduce link font size for mobile */
+  }
+
+  /* Main Content Adjustments */
+  main {
+    margin: 10px;  /* Reduce margin to give more space on small screens */
+    padding: 15px; /* Reduce padding */
+    max-width: 100%;  /* Allow full width */
+  }
+
+  h1, h2 {
+    font-size: 1.6rem;  /* Adjust header font sizes */
+    margin-left: 20px;  /* Reduce left margin */
+  }
+
+  main p {
+    font-size: 1rem;  /* Adjust paragraph font size */
+    margin: 15px 0;   /* Adjust margin */
+    text-align: left;  /* Align text left for better readability */
+  }
+
+  /* Profile Image Adjustments */
+  img.profile-img {
+    width: 120px;  /* Reduce profile image size */
+    height: 120px;
+    margin: 20px auto; /* Center the profile image */
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;  /* Ensure all images are responsive */
+    height: auto;     /* Maintain aspect ratio */
+    margin: 10px 0;   /* Reduce margin between images */
+  }
+
+  /* Projects (removing grid layout) */
+  #projects {
+    display: block;   /* Stack the projects vertically */
+    margin: 20px 0;   /* Adjust margin */
+  }
+
+  #projects ul {
+    margin-left: 0;   /* Remove extra left margin */
+    padding-left: 0;  /* Remove padding */
+  }
+
+  /* Adjust Two Images Side by Side for Smaller Screens */
+  .two-img {
+    max-width: 100%;  /* Ensure images take full width on smaller screens */
+    margin: 10px 0;   /* Adjust margin */
+  }
+
+  /* Footer Adjustments */
+  footer p {
+    font-size: 0.9rem;  /* Adjust font size for the footer */
     margin: 10px 0;
   }
 
-  /* Profile Image adjustments for mobile */
-  img.profile-img {
-    margin-bottom: 10px;
+  /* Contact Form */
+  form {
+    gap: 8px;  /* Reduce gap for smaller screens */
   }
 
-  /* Adjust Paragraphs and Headers on Mobile */
-  h1 {
-    font-size: 1.5rem;
+  form label {
+    font-size: 1rem;  /* Adjust label size */
   }
 
-  p {
-    font-size: 1rem;
+  form input, form textarea {
+    font-size: 0.9rem;  /* Adjust input/textarea font size */
   }
-}
 
-/* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-}
+  form button {
+    padding: 8px 12px;  /* Reduce button padding */
+    font-size: 0.9rem;  /* Adjust button font size */
+  }
 
-form label {
-  font-size: 1.1rem;
-  color: #333;
-}
-
-form input, form textarea {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-form button {
-  padding: 10px 15px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #FFD700;
+  form button:hover {
+    background-color: #FFD700;
+  }
 }
