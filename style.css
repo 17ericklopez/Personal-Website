@@ -185,10 +185,12 @@ img.profile-img {
   nav ul {
     flex-direction: row;  /* Keep navigation items horizontal */
     align-items: center;     /* Center the items */
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav ul li {
-    margin: 0 20px;  /* Adjust spacing for smaller screens */
+    margin: 0;  /* Adjust spacing for smaller screens */
   }
 
   nav ul li a {
@@ -231,7 +233,7 @@ img.profile-img {
 
   /* Images */
   img {
-    max-width: 85%;  /* Ensure all images are responsive */
+    max-width: 100%;  /* Ensure all images are responsive */
     height: auto;     /* Maintain aspect ratio */
     margin: 10px 0;   /* Reduce margin between images */
   }
@@ -244,7 +246,7 @@ img.profile-img {
 
   #projects ul {
     margin-left: 0;   /* Remove extra left margin */
-    padding-left: 0;  /* Remove padding */
+    padding-left: 40px;  /* Remove padding */
   }
 
   /* Adjust Two Images Side by Side for Smaller Screens */
@@ -261,15 +263,22 @@ img.profile-img {
 
   /* Contact Form */
   form {
-    gap: 8px;  /* Reduce gap for smaller screens */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;  /* Reduce gap for smaller screens */
   }
 
   form label {
-    font-size: 1rem;  /* Adjust label size */
+    flex: 0 0 100px;
+    margin-bottom: 5px
   }
 
   form input, form textarea {
-    font-size: 0.9rem;  /* Adjust input/textarea font size */
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
   }
 
   form button {
