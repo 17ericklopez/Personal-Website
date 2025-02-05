@@ -183,7 +183,7 @@ img.profile-img {
 @media (max-width: 768px) {
   /* Header and Navigation */
   nav ul {
-    flex-direction: column;  /* Stack navigation items */
+    flex-direction: row;  /* Keep navigation items horizontal */
     align-items: center;     /* Center the items */
   }
 
@@ -204,13 +204,22 @@ img.profile-img {
 
   h1, h2 {
     font-size: 1.6rem;  /* Adjust header font sizes */
-    margin-left: 20px;  /* Reduce left margin */
+    margin-left: 0px;  /* Reduce left margin */
   }
 
   main p {
     font-size: 1rem;  /* Adjust paragraph font size */
     margin: 15px 0;   /* Adjust margin */
     text-align: left;  /* Align text left for better readability */
+  }
+
+  /* style for video on jobs.html */
+  video {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
   }
 
   /* Profile Image Adjustments */
