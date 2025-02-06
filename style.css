@@ -249,10 +249,23 @@ img.profile-img {
     padding-left: 40px;  /* Remove padding */
   }
 
+  /* For small images with 'low-img' class */
+  .low-img {
+    max-width: 85%;    /* Make the first two images bigger */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
   /* Adjust Two Images Side by Side for Smaller Screens */
   .two-img {
-    max-width: 50%;  /* Ensure images take full width on smaller screens */
-    margin: 10px 0;   /* Adjust margin */
+    max-width: 45%;    /* Reduce the size of the last two images */
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+    margin: 0 10px;    /* Add margin between them */
   }
 
   /* Contact - Adjust bullet points position */
