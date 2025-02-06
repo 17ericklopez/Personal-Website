@@ -194,7 +194,7 @@ img.profile-img {
   }
 
   nav ul li a {
-    font-size: 18px; /* Reduce link font size for mobile */
+    font-size: 16px; /* Reduce link font size for mobile */
   }
 
   /* Main Content Adjustments */
@@ -313,7 +313,7 @@ img.profile-img {
   form button:hover {
     background-color: #FFD700;
   }
-  
+
    /* Bullet points (social links) on contact.html */
    .social-container {
     position: relative;
