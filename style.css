@@ -235,7 +235,7 @@ img.profile-img {
   img {
     max-width: 100%;  /* Ensure all images are responsive */
     height: auto;     /* Maintain aspect ratio */
-    margin: 10px 0;   /* Reduce margin between images */
+    margin: 5px 0;   /* Reduce margin between images */
   }
 
   /* Projects (removing grid layout) */
@@ -257,7 +257,7 @@ img.profile-img {
 
   /* Contact - Adjust bullet points position */
   ul {
-    padding-left: 0; /* Add some padding to the left of the list */
+    padding-left: 20px; /* Add some padding to the left of the list */
     margin-left: 0; /* Remove any extra margin */
   }
 
