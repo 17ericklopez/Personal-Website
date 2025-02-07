@@ -142,14 +142,20 @@ img.profile-img {
   border-radius: 8px;
 }
 
+
+.images-container {
+  display: flex;
+  justify-content: center; /* Space between the images */
+  gap: 20px; /* Optional: Adds space between images */
+  flex-wrap: wrap; /* Makes sure images wrap if the screen is too small */
+}
+
 /* Two Images Side by Side */
 .two-img {
-  max-width: 30%;
+  max-width: 35%;  /* Allow each image to take up 48% of the container width */
   height: auto;
   object-fit: contain;
   border-radius: 8px;
-  display: block;
-  margin: 0 auto;
 }
 
 /* Grid Layout for Projects */
@@ -256,6 +262,14 @@ img.profile-img {
     margin-right: auto;
     display: block;
     border-radius: 8px;
+  }
+
+/* Ensure images inside the container are side by side */
+  .images-container {
+    display: flex;
+    justify-content: center;  /* Center the images horizontally */
+    gap: 20px;  /* Optional: Adds space between the images */
+    flex-wrap: wrap;  /* Makes sure images wrap if the screen is too small */
   }
 
   /* Adjust Two Images Side by Side for Smaller Screens */
