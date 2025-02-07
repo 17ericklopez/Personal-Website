@@ -19,6 +19,31 @@ body.dark {
   color: #f0f0f0;          /* Light text on dark background */
 }
 
+header.dark {
+  background-color: #444; /* Slightly darker header for dark theme */
+}
+
+body.dark nav ul li a {
+  color: #ccc;  /* Light text color on dark theme */
+}
+
+body.dark footer {
+  background-color: #444; /* Dark footer background */
+}
+
+body.dark main {
+  background-color: #555;  /* Dark background for main content */
+}
+
+body.dark button {
+  background-color: #555;
+  color: #ddd;
+}
+
+body.dark button:hover {
+  background-color: #333;
+}
+
 /* Header and Navigation */
 header {
   background-color: #333;
