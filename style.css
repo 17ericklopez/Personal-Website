@@ -274,12 +274,10 @@ img.profile-img {
 
   /* Adjust Two Images Side by Side for Smaller Screens */
   .two-img {
-    max-width: 45%;    /* Reduce the size of the last two images */
+    max-width: 35%;  /* Allow each image to take up 48% of the container width */
     height: auto;
     object-fit: contain;
     border-radius: 8px;
-    display: block;
-    margin: 0 10px;    /* Add margin between them */
   }
 
   /* Contact - Adjust bullet points position */
