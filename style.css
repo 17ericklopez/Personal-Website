@@ -19,6 +19,11 @@ body.dark {
   color: #f0f0f0;          /* Light text on dark background */
 }
 
+/* Smooth transition for dark theme */
+header, footer, main, button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 header.dark {
   background-color: #444; /* Slightly darker header for dark theme */
 }
@@ -42,6 +47,21 @@ body.dark button {
 
 body.dark button:hover {
   background-color: #333;
+}
+
+/* Button Styling for Theme Toggle */
+#theme-toggle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #444;
 }
 
 /* Header and Navigation */
