@@ -263,7 +263,7 @@ img.profile-img {
     display: block;
     border-radius: 8px;
   }
-
+/**/
 /* Ensure images inside the container are side by side */
   .images-container {
     display: flex;
