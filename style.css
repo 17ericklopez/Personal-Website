@@ -166,6 +166,16 @@ img.profile-img {
   border-radius: 8px;
 }
 
+/* Grid Layout for Projects */
+#projects {
+  margin: 20px 0;
+  display: block;
+}
+
+#projects ul {
+  margin-left: 100px;
+}
+
 /* Youtube Link position */
 .youtube-link {
   position: relative;
@@ -174,7 +184,7 @@ img.profile-img {
 
 }
 
-/* Social Media Link Container: Styling for social media links container */
+/* youtube link positioning */
 .social-container {
   position: relative;
   left: 100px;
@@ -222,11 +232,12 @@ body.dark main {
   background-color: #0d0d0d;  /* Dark background for main content */
 }
 
+/* Dark button color */
 body.dark button {
   background-color: #555;
   color: #ddd;
 }
-
+/* hover over button */
 body.dark button:hover {
   background-color: #333;
 }
@@ -305,6 +316,17 @@ body.dark button:hover {
     margin: 5px 0;   /* Reduce margin between images */
   }
 
+  /* Projects (removing grid layout) */
+  #projects {
+    display: block;   /* Stack the projects vertically */
+    margin: 20px 0;   /* Adjust margin */
+  }
+
+  #projects ul {
+    margin-left: 0;   /* Remove extra left margin */
+    padding-left: 40px;  /* Remove padding */
+  }
+
   /* For small images with 'low-img' class */
   .low-img {
     max-width: 85%;    /* Make the first two images bigger */
@@ -354,13 +376,12 @@ body.dark button:hover {
     gap: 20px;  /* Reduce gap for smaller screens */
   }
 
-  /* form lable */
   form label {
     flex: 0 0 100px;
     margin-bottom: 5px
   }
 
-  /* Styling for text area in contact */
+  /* Styling text area form */
   form input, form textarea {
     flex: 1;
     padding: 10px;
@@ -369,13 +390,12 @@ body.dark button:hover {
     border-radius: 8px;
   }
 
-  /* Styling button */
+  /* form button */
   form button {
     padding: 8px 12px;  /* Reduce button padding */
     font-size: 0.9rem;  /* Adjust button font size */
   }
 
-  /* Hover on button */
   form button:hover {
     background-color: #FFD700;
   }
@@ -386,7 +406,6 @@ body.dark button:hover {
     left: 10px; /* Adjust left margin for bullet points */
   }
 
-  /* links */
   .social-link {
     display: block;
     margin-bottom: 5px;
@@ -427,13 +446,14 @@ body.dark button:hover {
     background-color: #0d0d0d;  /* Dark background for main content */
   }
 
+  /* dark button color */
   body.dark button {
-    background-color: #555;  /* background color on botton */
+    background-color: #555;
     color: #ddd;
   } 
-
+  /* hover dark button */
   body.dark button:hover {
-    background-color: #333;   /* hover on button on dark mode */
+    background-color: #333;
   }
 
   /* Button Styling for Theme Toggle */
