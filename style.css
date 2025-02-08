@@ -8,60 +8,9 @@
 /* Body Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f28a8a;
+  background-color: #f0f0f0;
   color: #333;
   line-height: 1.6;
-}
-
-/* Dark Theme Styles */
-body.dark {
-  background-color: #333;  /* Dark background */
-  color: #f0f0f0;          /* Light text on dark background */
-}
-
-/* Smooth transition for dark theme */
-header, footer, main, button {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header.dark {
-  background-color: #444; /* Slightly darker header for dark theme */
-}
-
-body.dark nav ul li a {
-  color: #ccc;  /* Light text color on dark theme */
-}
-
-body.dark footer {
-  background-color: #444; /* Dark footer background */
-}
-
-body.dark main {
-  background-color: #555;  /* Dark background for main content */
-}
-
-body.dark button {
-  background-color: #555;
-  color: #ddd;
-}
-
-body.dark button:hover {
-  background-color: #333;
-}
-
-/* Button Styling for Theme Toggle */
-#theme-toggle {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#theme-toggle:hover {
-  background-color: #444;
 }
 
 /* Header and Navigation */
@@ -236,6 +185,69 @@ img.profile-img {
   display: block;
   margin-bottom: 5px;
 }
+
+
+/* DARK MODE SECTIONS */
+/* Dark Theme Styles */
+body.dark {
+  background-color: #333;  /* Dark background */
+  color: #f0f0f0;          /* Light text on dark background */
+}
+
+/* Smooth transition for dark theme */
+header, footer, main, button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header.dark {
+  background-color: #444; /* Slightly darker header for dark theme */
+}
+
+/* Dark Mode Section Titles */
+body.dark h1, body.dark h2 {
+  color: #ddd; /* Lighter text in dark mode */
+}
+
+body.dark main p {
+  color: #ddd;  /* Lighter text color in dark mode for better readability */
+}
+
+body.dark nav ul li a {
+  color: #ccc;  /* Light text color on dark theme */
+}
+
+body.dark footer {
+  background-color: #444; /* Dark footer background */
+}
+
+body.dark main {
+  background-color: #0d0d0d;  /* Dark background for main content */
+}
+
+body.dark button {
+  background-color: #555;
+  color: #ddd;
+}
+
+body.dark button:hover {
+  background-color: #333;
+}
+
+/* Button Styling for Theme Toggle */
+#theme-toggle {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #444;
+}
+
 
 @media (max-width: 768px) {
   /* Header and Navigation */
