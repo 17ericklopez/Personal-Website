@@ -1,3 +1,9 @@
+/* Erick Lopez
+   February 07, 2025
+   CS-382 Modern Web Technologies
+   Personal Website Assignment
+   style.css file */
+
 /* Global Reset */
 * {
   margin: 0;
@@ -5,7 +11,7 @@
   box-sizing: border-box;
 }
 
-/* Body Styles */
+/* Body Styles: Set base font, background, text color, line height*/
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -13,14 +19,14 @@ body {
   line-height: 1.6;
 }
 
-/* Header and Navigation */
+/* Header and Navigation: Styles for the reader and general naviagtion */
 header {
   background-color: #333;
   color: white;
   padding: 10px 0;
 }
 
-/* Navigation Menu */
+/* Navigation Menu: Layout and styles for naviation list */
 nav ul {
   list-style: none;
   display: flex;
@@ -28,12 +34,12 @@ nav ul {
   flex-wrap: wrap;
 }
 
-/* Individual Navigation items */
+/* Individual Navigation items: Margin between each navigation item */
 nav ul li {
   margin: 0 20px;
 }
 
-/* Navigation Links */
+/* Navigation Links: Link styles inlcuding color, font-size, and hover effect */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -47,7 +53,7 @@ nav ul li a:hover {
   color: #529ad0; /* Gold hover effect */
 }
 
-/* Main Content */
+/* Main Content: Styling main content area*/
 main {
   max-width: 1000px;
   margin: 20px auto;
@@ -58,6 +64,7 @@ main {
   overflow: hidden;
 }
 
+/* Paragraph Styling within Main */
 main p {
   font-size: 1.1rem;
   color: #666;
@@ -69,7 +76,7 @@ main p {
   margin-right: auto;
 }
 
-/* Section Titles */
+/* Section Titles: header styles for h1 and h2*/
 h1, h2 {
   color: #333;
   margin-left: 50px;
@@ -91,6 +98,7 @@ footer {
   width: 100%;
 }
 
+/* Footer: Styles for the footer area */
 footer p {
   font-size: 1rem;
   color: #ccc;
@@ -142,7 +150,7 @@ img.profile-img {
   border-radius: 8px;
 }
 
-
+/* Container for images*/
 .images-container {
   display: flex;
   justify-content: center; /* Space between the images */
@@ -158,16 +166,6 @@ img.profile-img {
   border-radius: 8px;
 }
 
-/* Grid Layout for Projects */
-#projects {
-  margin: 20px 0;
-  display: block;
-}
-
-#projects ul {
-  margin-left: 100px;
-}
-
 /* Youtube Link position */
 .youtube-link {
   position: relative;
@@ -176,6 +174,7 @@ img.profile-img {
 
 }
 
+/* Social Media Link Container: Styling for social media links container */
 .social-container {
   position: relative;
   left: 100px;
@@ -306,17 +305,6 @@ body.dark button:hover {
     margin: 5px 0;   /* Reduce margin between images */
   }
 
-  /* Projects (removing grid layout) */
-  #projects {
-    display: block;   /* Stack the projects vertically */
-    margin: 20px 0;   /* Adjust margin */
-  }
-
-  #projects ul {
-    margin-left: 0;   /* Remove extra left margin */
-    padding-left: 40px;  /* Remove padding */
-  }
-
   /* For small images with 'low-img' class */
   .low-img {
     max-width: 85%;    /* Make the first two images bigger */
@@ -366,11 +354,13 @@ body.dark button:hover {
     gap: 20px;  /* Reduce gap for smaller screens */
   }
 
+  /* form lable */
   form label {
     flex: 0 0 100px;
     margin-bottom: 5px
   }
 
+  /* Styling for text area in contact */
   form input, form textarea {
     flex: 1;
     padding: 10px;
@@ -379,11 +369,13 @@ body.dark button:hover {
     border-radius: 8px;
   }
 
+  /* Styling button */
   form button {
     padding: 8px 12px;  /* Reduce button padding */
     font-size: 0.9rem;  /* Adjust button font size */
   }
 
+  /* Hover on button */
   form button:hover {
     background-color: #FFD700;
   }
@@ -394,6 +386,7 @@ body.dark button:hover {
     left: 10px; /* Adjust left margin for bullet points */
   }
 
+  /* links */
   .social-link {
     display: block;
     margin-bottom: 5px;
@@ -435,12 +428,12 @@ body.dark button:hover {
   }
 
   body.dark button {
-    background-color: #555;
+    background-color: #555;  /* background color on botton */
     color: #ddd;
   } 
 
   body.dark button:hover {
-    background-color: #333;
+    background-color: #333;   /* hover on button on dark mode */
   }
 
   /* Button Styling for Theme Toggle */
