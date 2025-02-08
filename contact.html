@@ -1,6 +1,15 @@
+<!--  Erick Lopez
+   February 07, 2025
+   CS-382 Modern Web Technologies
+   Personal Website Assignment
+   contact.html file
+   Description: This is a contact page for Erick Lopez's personal website. It includes 
+  navigation to other pages, a contact section with email and social media links, 
+  a form for direct communication, and a dark mode toggle feature. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Metadata and Title -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Erick Lopez</title>
@@ -8,7 +17,7 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation Section: Contais links to different pages on the site -->
   <header>
     <nav>
       <ul>
@@ -25,11 +34,12 @@
   <!-- Main Content: Contact -->
   <main>
     <section id="contact">
+      <!-- Main heading for contact section -->
       <h1>Contact Me</h1>
       <p>You can reach me through any of the following methods:</p>
-      
+      <!-- Email section with a link-->
       <p>Email: <a href="mailto:elopez17@nmsu.edu">elopez17@nmsu.edu</a></p>
-      
+      <!-- Social Media Section: Links to LinkedIn and Github profiles-->
       <h2>Social Media</h2>
       <div class="social-container">
       <ul>
@@ -38,18 +48,22 @@
       </ul>
       </div>
 
-      <!-- Optionally add a contact form -->
+      <!-- Contact form section -->
       <h2>Or fill out the contact form below:</h2>
       <form action="submit_form.php" method="POST">
+        <!-- Name Input Field -->
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
         
+        <!-- Email Input Field -->
         <label for="email">Your Email:</label>
         <input type="email" id="email" name="email" required>
         
+        <!-- Message Textarea Field -->
         <label for="message">Message:</label>
         <textarea id="message" name="message" required></textarea>
         
+        <!-- Submit Button for the Form -->
         <button type="submit">Send Message</button>
       </form>
       <!-- Theme Toggle Button -->
@@ -57,11 +71,11 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
     <p>Contact me at: elopez17@nmsu.edu</p>
   </footer>
-  <!-- JavaScript -->
+  <!-- JavaScript Section: handles dark mode-->
   <script>
     // Toggle the dark class when the button is clicked
     document.getElementById("theme-toggle").onclick = function() {

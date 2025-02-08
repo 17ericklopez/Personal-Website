@@ -1,6 +1,14 @@
+<!--  Erick Lopez
+   February 07, 2025
+   CS-382 Modern Web Technologies
+   Personal Website Assignment
+   family.html file
+   Description: This page showcases Erick Lopez's family members, 
+   including father, mother, and siblings.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Metadata and Title -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Family - Erick Lopez</title>
@@ -8,7 +16,7 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation Section: Contais links to different pages on the site -->
   <header>
     <nav>
       <ul>
@@ -25,21 +33,22 @@
   <!-- Main Content: Family -->
   <main>
     <section id="family">
+      <!-- Section Heading: My Family -->
       <h1>My Family</h1>
       <p>Here’s a bit about my family, the amazing people who have shaped who I am today and continue to inspire me every day.</p>
-      
+      <!-- Family Member: Father -->
       <div class="family-member">
         <h2>My Father</h2>
         <p>My father is a hard worker and a strong person. He leads by example and always shows me how to face challenges head-on. From a young age, I learned from him the importance of being determined and always supporting your family. He taught me things like how to change a tire, fix things around the house, and play soccer. But what really stands out is how he showed me what it means to be a good man—someone who is honest, patient, and kind. I look up to him not only as my father, but also as a mentor. His wisdom has always guided me, and I’m grateful for everything he’s taught me.</p>
         <img src="Father.jpeg" alt="My Father" class="ver-img">
       </div>
-
+      <!-- Family Member: Mother -->
       <div class="family-member">
         <h2>My Mother</h2>
         <p>My mother is the heart of our family. She’s the one who holds everything together with her love and care. She’s always been my biggest supporter, encouraging me to follow my dreams and never give up. Everything I do is to make her proud because she’s my biggest motivation. Her love and strength have shaped me in so many ways, and I’m lucky to have her as my mom. She is my constant support, and I know that no matter what happens, she’ll always be there for me.</p>
         <img src="Mom.JPG" alt="My Mother" class="ver-img">
       </div>
-
+      <!-- Family Member: Siblings -->
       <div class="family-member">
         <h2>My Siblings</h2>
         <p>I have three siblings—two brothers and one sister—and I’m really close with all of them. My younger brother and I are best friends. We’re only a year apart, so we’ve grown up doing everything together. From playing video games to just hanging out, we’ve shared a lot of great memories.</p>
@@ -48,16 +57,16 @@
         <img src="Siblings.jpeg" alt="My Siblings" class="low-img">
         <p>Together, we’ve shared many happy memories and helped each other through tough times. My siblings are not just family—they’re my best friends. Our bond is strong, and I’m thankful for them every day.</p>
       </div>
-      <!-- Theme Toggle Button -->
+      <!-- Theme Toggle Button for Dark mode-->
       <button id="theme-toggle">Toggle Dark Mode</button>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
     <p>Contact me at: elopez17@nmsu.edu</p>
   </footer>
-  <!-- JavaScript -->
+  <!-- JavaScript Section: Handles dark mode-->
   <script>
     // Toggle the dark class when the button is clicked
     document.getElementById("theme-toggle").onclick = function() {

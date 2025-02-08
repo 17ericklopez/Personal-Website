@@ -1,6 +1,17 @@
+<!--  Erick Lopez
+   February 07, 2025
+   CS-382 Modern Web Technologies
+   Personal Website Assignment
+   project.html file
+   Description:  This page showcases a selection of projects that Erick Lopez (myself) has worked on, 
+   including a 2-D Java-based game, participation in the BEST Robotics competition,
+   and the ongoing GuitaR-AI project. Each project has a detailed description of the tools 
+   and technologies used, as well as an image representation.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Metadata and Title -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - Erick Lopez</title>
@@ -8,7 +19,7 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+ <!-- Navigation Section: Contais links to different pages on the site -->
   <header>
     <nav>
       <ul>
@@ -25,10 +36,12 @@
   <!-- Main Content: Hobbies -->
   <main>
     <section id="projects">
+       <!-- Section Heading: My Projects -->
       <h1>My Projects</h1>
       <p>Here are some of the key projects I've worked on throughout my journey in computer science and beyond:</p>
       
       <div class="project">
+        <!-- Project 1: 2-D Java Based Game -->
         <h2>2-D Java Based Game</h2>
         <p>One of my favorite projects I've worked on was a 2-D game based on the John Wick movies called <strong>Juan Wick</strong>. This game was developed as part of a team project in my Software Development class. As a beginner programmer, it was a huge learning experience and gave me a deeper understanding of object-oriented programming (OOP) and game design.</p>
         <p><strong>Tools & Technologies Used:</strong> 
@@ -41,6 +54,7 @@
         <img src="JuanWick.jpeg" alt="2-D Game" class="low-img">
       </div>
 
+      <!-- Project 2: BEST Robotics -->
       <div class="project">
         <h2>BEST Robotics</h2>
         <p>Another exciting project I worked on was designing and building a robot for the <strong>BEST Robotics Competition</strong>, a national competition held in the U.S. that challenges students to build robots from scratch based on certain themes and criteria. I participated in this competition in both 2016 and 2017, where I learned about hardware design, programming, and teamwork.</p>
@@ -54,6 +68,7 @@
         <img src="BEST.jpg" alt="Best Robotics" class="low-img">
       </div>
 
+      <!-- Project 3: GuitaR-AI (Ongoing) -->
       <div class="project">
         <h2>GuitaR-AI (Currently)</h2>
         <p>Currently, I am working on an exciting project called <strong>GuitaR-AI</strong>, which aims to revolutionize how people learn guitar. The idea is to create a program that can isolate the guitar sound from a music track, separate it from other instruments, and then train an AI model to recognize guitar chords and notes. This way, users can easily learn how to play along with their favorite songs.</p>
@@ -66,17 +81,17 @@
             </ul>
         <img src="Guitar.png" alt="GuitaR-AI" class="low-img">
       </div>
-      <!-- Theme Toggle Button -->
+      <!-- Theme Toggle Button for Dark Mode -->
       <button id="theme-toggle">Toggle Dark Mode</button>
       
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section-->
   <footer>
     <p>Contact me at: elopez17@nmsu.edu</p>
   </footer>
-  <!-- JavaScript -->
+  <!-- JavaScript Section: Handles dark mode -->
   <script>
     // Toggle the dark class when the button is clicked
     document.getElementById("theme-toggle").onclick = function() {

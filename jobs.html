@@ -1,6 +1,17 @@
+<!--  Erick Lopez
+   February 07, 2025
+   CS-382 Modern Web Technologies
+   Personal Website Assignment
+   jobs.html file
+   Description: This page showcases Erick Lopez's job experience, 
+   including positions such as Operator at Lopez Jumpers, Video Editor at 
+   Gold Monkey Jewelry, and cook at Pappas Pizzeria. It provides insights into 
+   responsibilities, skills used, and media such as images and videos showcasing the work-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Metadata and Title -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jobs - Erick Lopez</title>
@@ -8,7 +19,7 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation Section: Contais links to different pages on the site -->
   <header>
     <nav>
       <ul>
@@ -25,10 +36,12 @@
   <!-- Main Content: Jobs -->
   <main>
     <section id="jobs">
+      <!-- Section Heading: My Job Experience -->
       <h1>My Job Experience</h1>
       <p>Here are some of the positions I've held during my career and academic journey:</p>
       
       <div class="job">
+        <!-- Job 1: Lopez Jumpers -->
         <h2>Operator - Lopez Jumpers</h2>
         <p><strong>Duration:</strong> March 2019 - Current</p>
         <p><strong>Responsibilities:</strong> Installed a diverse range of different types of inflatable structures, including balloons, bouncy houses, water slides for numerous events. Delivered tables, chairs, and even karaoke equipment to clients, meeting
@@ -38,6 +51,7 @@
       </div>
 
       <div class="job">
+        <!-- Job 2: Gold Monkey Jewerly -->
         <h2>Video Editor - Gold Monkey Jewerly</h2>
         <p><strong>Duration:</strong> July 2023 - Current</p>
         <p><strong>Responsibilities:</strong> As a lead video editor at Gold Monkey Jewerly, I oversee the entire video production process, from conceptualization to editing and final output. I create engaging content for social media platforms, promotional videos, and other marketing materials. 
@@ -49,6 +63,7 @@
       </div>
 
       <div class="job">
+        <!-- Job 3: Pappas Pizzeria -->
         <h2>Pappas Pizzeria</h2>
         <p><strong>Duration:</strong> March 2021 - July 2021</p>
         <p><strong>Responsibilities:</strong> At Pappas Pizzeria, I perfromed a dual role where I was responsible for preparing and cooking a veriety of pizzas, ensuring they were made to customer specifications and served hot and fresh. I also took on the responsibility
@@ -56,16 +71,16 @@
         <p><strong>Skills Used:</strong> Cooking, Customer Sercice, Driving, Time Management</p>
         <img src="pizza.jpg" alt="Pappas Pizzeria" class="low-img">
       </div>
-      <!-- Theme Toggle Button -->
+      <!-- Theme Toggle Button for Dark Mode -->
       <button id="theme-toggle">Toggle Dark Mode</button>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
     <p>Contact me at: elopez17@nmsu.edu</p>
   </footer>
-  <!-- JavaScript -->
+  <!-- JavaScript Section: Handles dark mode-->
   <script>
     // Toggle the dark class when the button is clicked
     document.getElementById("theme-toggle").onclick = function() {

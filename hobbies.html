@@ -1,6 +1,14 @@
+<!--  Erick Lopez
+   February 07, 2025
+   CS-382 Modern Web Technologies
+   Personal Website Assignment
+   hobbies.html file
+   Description: This page showcases Erick Lopez's hobbies, 
+   including fun things such as Offroading, playing soccer, and playing videos games.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Metadata and Title -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hobbies - Erick Lopez</title>
@@ -8,7 +16,7 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Navigation Section: Contais links to different pages on the site -->
   <header>
     <nav>
       <ul>
@@ -25,21 +33,22 @@
   <!-- Main Content: Hobbies -->
   <main>
     <section id="hobbies">
+      <!-- Section Heading: My Hobbies -->
       <h1>My Hobbies</h1>
       <p>I enjoy a variety of activities outside of my studies and work:</p>
-      
+      <!-- Hobby 1: Offroading -->
       <div class="hobby">
         <h2>Offroading</h2>
         <p>One of my most recent and exciting hobbies is off-roading with friends. I own a Can-Am Maverick, which offers an adrenaline-pumping experience on rough terrains. Every couple of weeks, I head out on new off-road routes around my hometown or venture out to the Red Sands. While off-roading can be risky—given the accidents that sometimes occur—safety is always my priority. I make sure to wear my seatbelt and take precautions to minimize any risks involved.</p>
         <img src="Offroading.jpeg" alt="Offroading Example" class="low-img">
       </div>
-
+      <!-- Hobby 2: Soccer -->
       <div class="hobby">
         <h2>Soccer</h2>
         <p>Soccer has always been my favorite sport. I was introduced to it at a young age and have been a passionate player ever since. Throughout my school years, I was part of various teams and clubs in El Paso, competing in numerous tournaments and even winning a few. Though I don't play as seriously now, I still love getting together with friends for some indoor games or kicking the ball around just for fun. Soccer will always be a hobby that brings me joy and keeps me active.</p>
         <img src="SoccerTeam.jpeg" alt="Soccer picture" class="low-img">
       </div>
-
+      <!-- Hobby 3: Video Games -->
       <div class="hobby">
         <h2>Video Games</h2>
         <p>Another hobby I enjoy is playing video games. I own two consoles: a PS5 and a Nintendo Switch. Recently, I've been spending more time on the PS5, particularly playing FC 25—a soccer video game that keeps me connected to my favorite sport. I also enjoy intense battle royale games like Fortnite and Call of Duty Warzone. As for the Nintendo Switch, it's my go-to for family-friendly games, providing a fun way to interact and compete with my loved ones.</p>
@@ -47,17 +56,17 @@
         <img src="FC25.jpg" alt="Video Games pictures" class="two-img">
         <img src="Nintendo.jpg" alt="Video Games Pictures" class="two-img">
       </div>
-      <!-- Theme Toggle Button -->
+      <!-- Theme Toggle Button fir Dark Mode -->
       <button id="theme-toggle">Toggle Dark Mode</button>
       
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section-->
   <footer>
     <p>Contact me at: elopez17@nmsu.edu</p>
   </footer>
-  <!-- JavaScript -->
+  <!-- JavaScript Section: Handles dark mode-->
   <script>
     // Toggle the dark class when the button is clicked
     document.getElementById("theme-toggle").onclick = function() {
