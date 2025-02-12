@@ -1,9 +1,10 @@
 /* Erick Lopez
-   February 07, 2025
+   February 11, 2025
    CS-382 Modern Web Technologies
    Personal Website Assignment
    style.css file
-   Description: */
+   Description: This CSS file styles a personal website with a clean, responsive design. It includes global resets,
+  layout styles for the header, navigation, main content, and footer, along with dark mode support and responsive adjustments for mobile devices.*/
 
 /* Global Reset */
 * {
